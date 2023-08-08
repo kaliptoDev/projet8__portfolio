@@ -1,0 +1,34 @@
+{
+  "header": {
+    "name": {
+      "fr": "Kalipto",
+      "en": "Kalipto"
+    },
+    "nav": {
+      "home": {
+        "fr": "Accueil",
+        "en": "Home"
+      },
+      "about": {
+        "fr": "A propos",
+        "en": "About"
+      },
+      "skills": {
+        "fr": "Compétences",
+        "en": "Skills"
+      },
+      "portfolio": {
+        "fr": "Portfolio",
+        "en": "Portfolio"
+      },
+      "pricing": {
+        "fr": "Tarifs",
+        "en": "Pricing"
+      },
+      "contact": {
+        "fr": "Contact",
+        "en": "Contact"
+      }
+    }
+  }
+}
