@@ -15,29 +15,34 @@ const Header = () => {
     const [isUnderIntro, setIsUnderIntro] = useState(false)
 
     const [logoClasses, setLogoClasses] = useState('')
-    const [navClasses, setNavClasses] = useState('recovered')
-    const [reduceMenuButtonClasses, setReduceMenuButtonClasses] = useState('transparent')
-    const [navBackgroundClasses, setNavBackgroundClasses] = useState('transparent')
+    const [navClasses, setNavClasses] = useState('recovered ')
+    const [reduceMenuButtonClasses, setReduceMenuButtonClasses] = useState('transparent ')
+    const [navBackgroundClasses, setNavBackgroundClasses] = useState('')
+    const [arrowClasses, setArrowClasses] = useState('')
 
     const handleChangeHeight = () => {
         const height = window.scrollY
 
         if (height > 10 && !shouldLogoShrink) {
             setShouldLogoShrink(true)
-            setLogoClasses('noShadow')
+            if (!logoClasses.includes('noShadow')) setLogoClasses(''.concat(logoClasses, 'noShadow '))
+            console.log(logoClasses + ' logoClasses')
         }
         if (height < 10 && shouldLogoShrink) {
             setShouldLogoShrink(false)
-            setLogoClasses('')
+            setLogoClasses(logoClasses.replace('noShadow ', ''))
+            console.log(logoClasses + ' noShadow Removal')
             if (navClasses.includes('reduced')) toggleMenu()
         }
-        if (height < ((window.innerHeight / 2)) && isMobile && !reduceMenuButtonClasses.includes("transparent")) setReduceMenuButtonClasses(reduceMenuButtonClasses + 'transparent')
+        if (height < ((window.innerHeight / 2)) && isMobile && !reduceMenuButtonClasses.includes("transparent")) {
+            setReduceMenuButtonClasses(''.concat(reduceMenuButtonClasses, 'transparent '))
+            setLogoClasses(logoClasses.replace('noShadow ', ''))
+        }
         if (height > ((window.innerHeight / 2)) && isMobile && reduceMenuButtonClasses.includes("transparent")) {
-            setReduceMenuButtonClasses(reduceMenuButtonClasses.replace('transparent', ''))
-            console.log("transprant")
+            setReduceMenuButtonClasses(reduceMenuButtonClasses.replace('transparent ', ''))
         }
 
-        if (!isMobile && !reduceMenuButtonClasses.includes("transparent")) setReduceMenuButtonClasses(reduceMenuButtonClasses + 'transparent')
+        if (!isMobile && !reduceMenuButtonClasses.includes("transparent")) setReduceMenuButtonClasses(''.concat(reduceMenuButtonClasses, 'transparent '))
         if (height > (window.innerHeight / 2) && !isUnderIntro) setIsUnderIntro(true)
         if (height < (window.innerHeight / 2) && isUnderIntro) setIsUnderIntro(false)
 
@@ -59,41 +64,26 @@ const Header = () => {
     }, [])
 
     const toggleMenu = () => {
-        const nav = document.querySelector('.header__nav') //navClasses
-        const reduceMenu = document.querySelector('.reduceMenu__button') //reduceMenuButtonClasses
-        const background = document.querySelector('.header__background') //navBackgroundClasses
-        const logo = document.querySelector('.header__logo__div') //logoClasses
 
-        if (nav.classList.contains('reduced')) {
-            nav.classList.remove('reduced')
-            nav.classList.add('recovered')
-            reduceMenu.classList.remove('reduceMenu__reduced')
-            reduceMenu.classList.add('reduceMenu__recovered')
-            background.classList.remove('reduced')
-            background.classList.add('recovered')
-            logo.classList.remove('reduced')
-            logo.classList.add('recovered')
+        if (navClasses.includes('reduced')) {
+            setNavClasses(''.concat(navClasses.replace('reduced ', ''), 'recovered '))
+            setNavBackgroundClasses(''.concat(navBackgroundClasses.replace('reduced ', ''), 'recovered '))
+            setLogoClasses(''.concat(logoClasses.replace('reduced ', ''), 'recovered '))
+            setReduceMenuButtonClasses(''.concat(reduceMenuButtonClasses.replace('reduced ', ''), 'recovered '))
 
         }
         else {
-            nav.classList.add('reduced')
-            nav.classList.remove('recovered')
-            reduceMenu.classList.add('reduceMenu__reduced')
-            reduceMenu.classList.remove('reduceMenu__recovered')
-            background.classList.remove('recovered')
-            background.classList.add('reduced')
-            logo.classList.remove('recovered')
-            logo.classList.add('reduced')
-
+            setNavClasses(''.concat(navClasses.replace('recovered ', ''), 'reduced '))
+            setNavBackgroundClasses(''.concat(navBackgroundClasses.replace('recovered ', ''), 'reduced '))
+            setLogoClasses(''.concat(logoClasses.replace('recovered ', ''), 'reduced '))
+            setReduceMenuButtonClasses(''.concat(reduceMenuButtonClasses.replace('recovered ', ''), 'reduced '))
         }
 
-        if (nav.classList.contains('reduced')) {
-            const arrow = document.querySelector('.reduceMenu__icon')
-            arrow.classList.add('reducedMenu__icon__reduced')
+        if (navClasses.includes('recovered')) {
+            setArrowClasses(arrowClasses + 'reducedMenu__icon__reduced ')
         }
         else {
-            const arrow = document.querySelector('.reduceMenu__icon')
-            arrow.classList.remove('reducedMenu__icon__reduced')
+            setArrowClasses(arrowClasses.replace('reducedMenu__icon__reduced ', ''))
         }
     }
 
@@ -102,9 +92,16 @@ const Header = () => {
     }
 
     useEffect(() => {
-        const logo = document.querySelector('.header__logo__div')
-        if (shouldLogoShrink) logo.classList.remove('header__logo__unshrinked')
-        else logo.classList.add('header__logo__unshrinked')
+
+        if (shouldLogoShrink) {
+            setLogoClasses(logoClasses.replace('header__logo__unshrinked ', ''))
+
+        } else {
+            setLogoClasses(logoClasses.replace('noShadow ', ''))
+            if (!logoClasses.includes('header__logo__unshrinked')) {
+                setLogoClasses(''.concat(logoClasses, 'header__logo__unshrinked '))
+            }
+        }
     }, [shouldLogoShrink])
 
     useEffect(() => {
@@ -118,7 +115,6 @@ const Header = () => {
     })
 
     const handleLanguage = () => {
-        const language = document.querySelector('.changeLanguage')
         if (currentLanguage === 'en') setCurrentLanguage('fr')
         else setCurrentLanguage('en')
     }
@@ -133,7 +129,7 @@ const Header = () => {
                 <div className={navBackgroundClasses + ' header__background '}></div>
 
                 <button className={`${reduceMenuButtonClasses} reduceMenu__button`} onClick={handleToggleMenu}>
-                    <img src='/icons/arrow.svg' alt='menu' className='reduceMenu__icon' />
+                    <img src='/icons/arrow.svg' alt='menu' className={`${arrowClasses} reduceMenu__icon`} />
                 </button>
                 <nav className={`${navClasses} header__nav `}>
                     <ul className='nav__list'>
