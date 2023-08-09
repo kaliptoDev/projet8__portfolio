@@ -13,6 +13,7 @@ const Header = () => {
     const [shouldLogoShrink, setShouldLogoShrink] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
     const [isUnderIntro, setIsUnderIntro] = useState(false)
+    
 
     const handleChangeHeight = () => {
         const height = window.scrollY
@@ -127,7 +128,7 @@ const Header = () => {
                 <button className={`reduceMenu__button transparent`} onClick={handleToggleMenu}>
                     <img src='/icons/arrow.svg' alt='menu' className='reduceMenu__icon' />
                 </button>
-                <nav className='header__nav'>
+                <nav className='header__nav recovered'>
                     <ul className='nav__list'>
                         <li><a href="/" className='header__home header__nav__item'>{pageContent ? nav.home[currentLanguage] : "default"}</a></li>
                         <li><a href="/skills" className='header__skills header__nav__item'>{pageContent ? nav.skills[currentLanguage] : "default"}</a></li>
