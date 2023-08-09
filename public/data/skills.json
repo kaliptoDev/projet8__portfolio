@@ -1,6 +1,6 @@
 {
-  "knowledge": {
-    "git": {
+  "knowledge": [
+    {
       "name": {
         "fr": "Git / GitHub",
         "en": "Git / GitHub"
@@ -9,9 +9,9 @@
         "fr": "Logiciel et plateforme de gestion de versions décentralisé, utilisé pour le développement de logiciels.",
         "en": "Decentralized version management software and platform, used for software development."
       },
-      "icon": "git"
+      "icon": "github"
     },
-    "html": {
+    {
       "name": {
         "fr": "HTML",
         "en": "HTML"
@@ -22,7 +22,7 @@
       },
       "icon": "html"
     },
-    "css": {
+    {
       "name": {
         "fr": "CSS",
         "en": "CSS"
@@ -33,7 +33,7 @@
       },
       "icon": "css"
     },
-    "javascript": {
+    {
       "name": {
         "fr": "JavaScript",
         "en": "JavaScript"
@@ -44,7 +44,7 @@
       },
       "icon": "javascript"
     },
-    "mongodb": {
+    {
       "name": {
         "fr": "MongoDB",
         "en": "MongoDB"
@@ -55,7 +55,7 @@
       },
       "icon": "mongodb"
     },
-    "nodejs": {
+    {
       "name": {
         "fr": "NodeJS / ExpressJS",
         "en": "NodeJS / ExpressJS"
@@ -66,7 +66,7 @@
       },
       "icon": "nodejs"
     },
-    "react": {
+    {
       "name": {
         "fr": "React",
         "en": "React"
@@ -77,7 +77,7 @@
       },
       "icon": "react"
     },
-    "seo": {
+    {
       "name": {
         "fr": "SEO",
         "en": "SEO"
@@ -88,7 +88,7 @@
       },
       "icon": "seo"
     },
-    "opti": {
+    {
       "name": {
         "fr": "Optimisation",
         "en": "Optimization"
@@ -99,7 +99,7 @@
       },
       "icon": "opti"
     }
-  },
+  ],
 
   "softSkills": {
     "autonomy": {
