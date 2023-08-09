@@ -4,7 +4,7 @@ import useCurrentLanguage from '../../hooks/useCurrentLanguage'
 import { useEffect, useState } from 'react'
 const Header = () => {
 
-    const { currentLanguage } = useCurrentLanguage()
+    const { currentLanguage, setCurrentLanguage } = useCurrentLanguage()
     const { pageContent } = usePageContent()
 
     const header = pageContent ? pageContent.header : null
@@ -20,7 +20,7 @@ const Header = () => {
         if (height > 10 && !shouldLogoShrink) {
             setShouldLogoShrink(true)
             document.querySelector('.header__logo__div').classList.add('noShadow')
-            
+
         }
         if (height < 10 && shouldLogoShrink) {
             setShouldLogoShrink(false)
@@ -65,7 +65,7 @@ const Header = () => {
             background.classList.add('recovered')
             logo.classList.remove('reduced')
             logo.classList.add('recovered')
-            
+
         }
         else {
             nav.classList.add('reduced')
@@ -76,7 +76,7 @@ const Header = () => {
             background.classList.add('reduced')
             logo.classList.remove('recovered')
             logo.classList.add('reduced')
-            
+
         }
 
         if (nav.classList.contains('reduced')) {
@@ -109,6 +109,12 @@ const Header = () => {
         }
     })
 
+    const handleLanguage = () => {
+        const language = document.querySelector('.changeLanguage')
+        if(currentLanguage === 'en') setCurrentLanguage('fr')
+        else setCurrentLanguage('en')
+    }
+
     return (
         <>
             <header className="header">
@@ -128,6 +134,9 @@ const Header = () => {
                         <li><a href="/portfolio" className='header__portfolio header__nav__item'>{pageContent ? nav.portfolio[currentLanguage] : "default"}</a></li>
                         <li><a href="/pricing" className='header__pricing header__nav__item'>{pageContent ? nav.pricing[currentLanguage] : "default"}</a></li>
                         <li><a href="/contact" className='header__contact header__nav__item'>{pageContent ? nav.contact[currentLanguage] : "default"}</a></li>
+                        <div className='changeLanguage header__nav__item' onClick={handleLanguage}>
+                            <img src={`/icons/${currentLanguage}.svg`} alt='language' className='changeLanguage__icon' />
+                        </div>
                     </ul>
                 </nav>
 

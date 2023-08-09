@@ -212,6 +212,19 @@
   }
 }
 
+.changeLanguage {
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  right: -14px;
+  bottom: -70px;
+}
+
+.changeLanguage__icon{
+  width: 32px;
+  height: 32px;
+}
+
 @media (width > 1000px) {
   .header a:hover {
     color: rgba(155, 155, 155, 0.5);
@@ -304,5 +317,15 @@
 
   .noShadow {
     box-shadow: none;
+  }
+  
+  .changeLanguage {
+    width: 32px;
+    height: 32px;
+  }
+
+  .changeLanguage__icon{
+    width: 32px;
+    height: 32px;
   }
 }
