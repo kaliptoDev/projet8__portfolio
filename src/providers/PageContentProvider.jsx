@@ -20,8 +20,6 @@ const PageContentProvider = ({ children }) => {
             .catch((err) => setError(err))
     }, [])
 
-    // console.log(pageContent)
-
     return (
         <PageContentContext.Provider value={{ pageContent, setPageContent, error }}>
             {children}
