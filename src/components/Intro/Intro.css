@@ -1,12 +1,13 @@
 .intro {
     position: absolute;
-    top: 0;
     left: 0;
+    bottom: 0;
     background-image: url('/images/computer_background_final.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-    z-index: -1;
+    z-index: 1;
 }
+
