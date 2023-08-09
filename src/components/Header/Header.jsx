@@ -13,31 +13,38 @@ const Header = () => {
     const [shouldLogoShrink, setShouldLogoShrink] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
     const [isUnderIntro, setIsUnderIntro] = useState(false)
-    
+
+    const [logoClasses, setLogoClasses] = useState('')
+    const [navClasses, setNavClasses] = useState('recovered')
+    const [reduceMenuButtonClasses, setReduceMenuButtonClasses] = useState('transparent')
+    const [navBackgroundClasses, setNavBackgroundClasses] = useState('transparent')
 
     const handleChangeHeight = () => {
         const height = window.scrollY
 
         if (height > 10 && !shouldLogoShrink) {
             setShouldLogoShrink(true)
-            document.querySelector('.header__logo__div').classList.add('noShadow')
-
+            setLogoClasses('noShadow')
         }
         if (height < 10 && shouldLogoShrink) {
             setShouldLogoShrink(false)
-            document.querySelector('.header__logo__div').classList.remove('noShadow')
-            if (document.querySelector('.header__nav').classList.contains('reduced')) toggleMenu()
+            setLogoClasses('')
+            if (navClasses.includes('reduced')) toggleMenu()
         }
-        if (height < ((window.innerHeight / 2)) && isMobile) document.querySelector('.reduceMenu__button').classList.add('transparent')
-        if (height > ((window.innerHeight / 2)) && isMobile) document.querySelector('.reduceMenu__button').classList.remove('transparent')
+        if (height < ((window.innerHeight / 2)) && isMobile && !reduceMenuButtonClasses.includes("transparent")) setReduceMenuButtonClasses(reduceMenuButtonClasses + 'transparent')
+        if (height > ((window.innerHeight / 2)) && isMobile && reduceMenuButtonClasses.includes("transparent")) {
+            setReduceMenuButtonClasses(reduceMenuButtonClasses.replace('transparent', ''))
+            console.log("transprant")
+        }
 
-        if (!isMobile) document.querySelector('.reduceMenu__button').classList.add('transparent')
+        if (!isMobile && !reduceMenuButtonClasses.includes("transparent")) setReduceMenuButtonClasses(reduceMenuButtonClasses + 'transparent')
         if (height > (window.innerHeight / 2) && !isUnderIntro) setIsUnderIntro(true)
         if (height < (window.innerHeight / 2) && isUnderIntro) setIsUnderIntro(false)
+
     }
 
     useEffect(() => {
-        if (isMobile && isUnderIntro && !document.querySelector('.header__nav').classList.contains('reduced')) toggleMenu()
+        if (isMobile && isUnderIntro && !navClasses.includes('reduced')) toggleMenu()
     }, [isUnderIntro])
 
     const handleResize = () => {
@@ -52,10 +59,10 @@ const Header = () => {
     }, [])
 
     const toggleMenu = () => {
-        const nav = document.querySelector('.header__nav')
-        const reduceMenu = document.querySelector('.reduceMenu__button')
-        const background = document.querySelector('.header__background')
-        const logo = document.querySelector('.header__logo__div')
+        const nav = document.querySelector('.header__nav') //navClasses
+        const reduceMenu = document.querySelector('.reduceMenu__button') //reduceMenuButtonClasses
+        const background = document.querySelector('.header__background') //navBackgroundClasses
+        const logo = document.querySelector('.header__logo__div') //logoClasses
 
         if (nav.classList.contains('reduced')) {
             nav.classList.remove('reduced')
@@ -112,23 +119,23 @@ const Header = () => {
 
     const handleLanguage = () => {
         const language = document.querySelector('.changeLanguage')
-        if(currentLanguage === 'en') setCurrentLanguage('fr')
+        if (currentLanguage === 'en') setCurrentLanguage('fr')
         else setCurrentLanguage('en')
     }
 
     return (
         <>
             <header className="header">
-                <div className='header__logo__div'>
+                <div className={`${logoClasses} header__logo__div`}>
                     <img src='/logos/logo.svg' alt='logo' className='header__logo' />
                 </div>
 
-                <div className='header__background'></div>
+                <div className={navBackgroundClasses + ' header__background '}></div>
 
-                <button className={`reduceMenu__button transparent`} onClick={handleToggleMenu}>
+                <button className={`${reduceMenuButtonClasses} reduceMenu__button`} onClick={handleToggleMenu}>
                     <img src='/icons/arrow.svg' alt='menu' className='reduceMenu__icon' />
                 </button>
-                <nav className='header__nav recovered'>
+                <nav className={`${navClasses} header__nav `}>
                     <ul className='nav__list'>
                         <li><a href="/" className='header__home header__nav__item'>{pageContent ? nav.home[currentLanguage] : "default"}</a></li>
                         <li><a href="/skills" className='header__skills header__nav__item'>{pageContent ? nav.skills[currentLanguage] : "default"}</a></li>
