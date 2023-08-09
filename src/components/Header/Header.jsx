@@ -146,4 +146,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header //to be deleted on 404
