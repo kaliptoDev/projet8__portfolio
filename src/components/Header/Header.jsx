@@ -26,12 +26,10 @@ const Header = () => {
         if (height > 10 && !shouldLogoShrink) {
             setShouldLogoShrink(true)
             if (!logoClasses.includes('noShadow')) setLogoClasses(''.concat(logoClasses, 'noShadow '))
-            console.log(logoClasses + ' logoClasses')
         }
         if (height < 10 && shouldLogoShrink) {
             setShouldLogoShrink(false)
             setLogoClasses(logoClasses.replace('noShadow ', ''))
-            console.log(logoClasses + ' noShadow Removal')
             if (navClasses.includes('reduced')) toggleMenu()
         }
         if (height < ((window.innerHeight / 2)) && isMobile && !reduceMenuButtonClasses.includes("transparent")) {
@@ -49,7 +47,8 @@ const Header = () => {
     }
 
     useEffect(() => {
-        if (isMobile && isUnderIntro && !navClasses.includes('reduced')) toggleMenu()
+        if (isMobile && isUnderIntro && !navClasses.includes('reduced')) {toggleMenu()}
+        if (!logoClasses.includes('noShadow') && !isUnderIntro) setLogoClasses(''.concat(logoClasses, 'noShadow '))
     }, [isUnderIntro])
 
     const handleResize = () => {
@@ -134,7 +133,7 @@ const Header = () => {
                 <nav className={`${navClasses} header__nav `}>
                     <ul className='nav__list'>
                         <li><a href="/" className='header__home header__nav__item'>{pageContent ? nav.home[currentLanguage] : "default"}</a></li>
-                        <li><a href="/skills" className='header__skills header__nav__item'>{pageContent ? nav.skills[currentLanguage] : "default"}</a></li>
+                        <li><a href="/whoami" className='header__whoami header__nav__item '>{pageContent ? nav.skills[currentLanguage] : "default"}</a></li>
                         <li><a href="/portfolio" className='header__portfolio header__nav__item'>{pageContent ? nav.portfolio[currentLanguage] : "default"}</a></li>
                         <li><a href="/pricing" className='header__pricing header__nav__item'>{pageContent ? nav.pricing[currentLanguage] : "default"}</a></li>
                         <li><a href="/contact" className='header__contact header__nav__item'>{pageContent ? nav.contact[currentLanguage] : "default"}</a></li>
