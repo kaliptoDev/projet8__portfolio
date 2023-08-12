@@ -60,19 +60,134 @@
     },
     "projects": [
       {
+        "title" : {
+          "fr": "Laurent Brémond",
+          "en": "Laurent Brémond"
+        },
+        "description": {
+          "fr" : "Site personnel d'un réalisateur de documentaires professionnel. Le site est en cours de construction.",
+          "en": "Personal site of a professional documentary filmmaker. The site is under construction."
+        },
+        "partof": {
+          "fr": "Freelance",
+          "en": "Freelance"
+        },
+        "link": "",
+        "image": "https://via.placeholder.com/480",
+        "stack": [
+          "/icons/html.svg",
+          "/icons/css.svg",
+          "/icons/javascript.svg",
+          "/icons/react.svg",
+          "/icons/nodejs.svg",
+          "/icons/mongodb.svg"
+        ]
+
+
+      },
+      {
         "title": {
           "fr": "Booki",
           "en": "Booki"
         },
         "description": {
-          "fr": "Site vitrine d'entraînement à la structuration en CSS et CSS",
-          "en": "Showcase site for training in CSS and CSS structuring"
+          "fr": "Site vitrine d'entraînement à la structuration en HTML et CSS",
+          "en": "Showcase site for training in HTML and CSS structuring"
+        },
+        "partof": {
+          "fr": "Formation OpenClassRooms",
+          "en": "OpenClassRooms training"
         },
         "link": "https://github.com/kaliptoDev/OCR_projet1/",
         "image": "https://via.placeholder.com/480",
         "stack": [
           "/icons/html.svg",
           "/icons/css.svg"
+        ]
+      },
+      {
+        "title": {
+          "fr" : "Sophie Bluel",
+          "en": "Sophie Bluel"
+        },
+        "description": {
+          "fr": "Site vitrine d'entraînement à la gestion dynamique d'un site vitrine",
+          "en": "Showcase site for training in dynamic management of a showcase site"
+        },
+        "partof": {
+          "fr": "Formation OpenClassRooms",
+          "en": "OpenClassRooms training"
+        },
+        "link": "https://github.com/kaliptoDev/OCR_projet2/",
+        "image": "https://via.placeholder.com/480",
+        "stack": [
+          "/icons/html.svg",
+          "/icons/css.svg",
+          "/icons/javascript.svg"
+        ]
+      },
+      {
+        "title": {
+          "fr": "Nina Carducci",
+          "en": "Nina Carducci"
+        },
+        "description": {
+          "fr": "Site d'entrainement à l'optimisation du référencement, des performances et au débug",
+          "en": "Training site for optimizing referencing, performance and debugging"
+        },
+        "partof": {
+          "fr": "Formation OpenClassRooms",
+          "en": "OpenClassRooms training"
+        },
+        "link": "https://github.com/kaliptoDev/nina-carducci",
+        "image": "https://via.placeholder.com/480",
+        "stack": [
+          "/icons/html.svg",
+          "/icons/css.svg",
+          "/icons/javascript.svg"
+        ]
+      },
+      {
+        "title": {
+          "fr": "Kasa",
+          "en": "Kasa"
+        },
+        "description": {
+          "fr": "Site d'entrainement à React et à la gestion d'API coté front end (CRA)",
+          "en": "Training site for React and front end API management (CRA)"
+        },
+        "partof": {
+          "fr": "Formation OpenClassRooms",
+          "en": "OpenClassRooms training"
+        },
+        "link": "https://github.com/kaliptoDev/kasa",
+        "image": "https://via.placeholder.com/480",
+        "stack": [
+          "/icons/html.svg",
+          "/icons/css.svg",
+          "/icons/javascript.svg",
+          "/icons/react.svg"
+        ]
+      },
+      {
+        "title": {
+          "fr": "Mon Vieux Grimoire",
+          "en": "Mon Vieux Grimoire"
+        },
+        "description": {
+          "fr": "Projet d'entrainement à NodeJS et Express, ainsi que MongoDB. Création et gestion d'une API CRUD",
+          "en": "Training project for NodeJS and Express, as well as MongoDB. Creation and management of a CRUD API"
+        },
+        "partof": {
+          "fr": "Formation OpenClassRooms",
+          "en": "OpenClassRooms training"
+        },
+        "link": "https://github.com/kaliptoDev/backend-p7",
+        "image": "https://via.placeholder.com/480",
+        "stack": [
+          "/icons/javascript.svg",
+          "/icons/nodejs.svg",
+          "/icons/mongodb.svg"
         ]
       }
     ]
