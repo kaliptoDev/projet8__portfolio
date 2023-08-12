@@ -9,10 +9,11 @@ const Portfolio = () => {
     return (
         <div className="portfolio" id='portfolio'>
             <div id="portfolio__link"></div>
-            {pageContent && pageContent.portfolio.projects.map((project, index) => {
-                return <Project key={index} project={project} />
-            })
-            }
+            <div className="portfolio__container">
+                {pageContent && pageContent.portfolio.projects.map((project, index) => {
+                    return <Project key={index} project={project} />
+                })
+                }</div>
         </div>
     )
 
