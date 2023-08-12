@@ -1,5 +1,13 @@
 {
   "header": {
+    "title": {
+      "fr": "Développeur web",
+      "en": "Web developer"
+    },
+    "subtitle": {
+      "fr": "basé en ",
+      "en": "based in "
+    },
     "name": {
       "fr": "Kalipto",
       "en": "Kalipto"
@@ -14,8 +22,8 @@
         "en": "About"
       },
       "skills": {
-        "fr": "Compétences",
-        "en": "Skills"
+        "fr": "Qui suis-je",
+        "en": "Who am I"
       },
       "portfolio": {
         "fr": "Portfolio",
@@ -30,5 +38,21 @@
         "en": "Contact"
       }
     }
+  },
+  "whoami": {
+    "title": {
+      "fr": "Qui suis-je ?",
+      "en": "Who am I ?"
+    },
+    "content": {
+      "fr": "Jeune développeur web passionné par les nouvelles techs et leur défis. Toujours à la recherche de nouveauté, j'aime apprendre et me surpasser. Fan de jeux vidéo et de musique, je suis aussi un grand curieux.",
+      "en": "Young web developer passionate about new techs and their challenges. Always looking for novelty, I like to learn and surpass myself. Fan of video games and music, I am also a great curious."
+    }
+  },
+  "portfolio": {
+    "skills": [
+
+    ]
+
   }
 }
