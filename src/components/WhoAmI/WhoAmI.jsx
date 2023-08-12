@@ -10,7 +10,8 @@ const WhoAmI = () => {
 
     return (
         <>
-            <div className="whoami_link" id='whoami'>
+            <div id='whoami'>
+                <div id='whoami__link'></div>
                 <div className="whoami">
                     <div className='whoami__content'>
                         <div className='whoami__content__div'>

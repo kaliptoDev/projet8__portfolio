@@ -269,11 +269,13 @@
   0% {
     opacity: 0;
     filter: blur(50px);
+    display: none;
   }
 
   100% {
     opacity: 1;
     filter: blur(0px);
+    display: flex;
   }
 }
 
@@ -281,11 +283,13 @@
   0% {
     opacity: 1;
     filter: blur(0px);
+    display: flex;
   }
 
   100% {
     opacity: 0;
     filter: blur(50px);
+    display: none;
   }
 }
 
@@ -494,5 +498,6 @@
     right: -10px;
     top: 30px;
     animation: nav__item__appear 5s ease-in-out 1;
+    cursor: pointer;
   }
 }
