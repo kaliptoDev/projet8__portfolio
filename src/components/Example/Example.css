@@ -1,3 +1,6 @@
 .example {
+    position: absolute;
+    top: 200vh;
     height: 400vh;
+    z-index: -1000;
 }

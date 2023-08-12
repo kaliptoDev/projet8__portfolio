@@ -1,0 +1,166 @@
+#whoami {
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+}
+
+.whoami {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(133, 15, 0, 1) 70%, rgba(133, 15, 0, 1) 100%);
+  text-shadow: 5px 5px 20px red, 0 0 16px grey, 1px 1px 20px white;
+  height: calc(100vh);
+  position: absolute;
+  box-sizing: border-box;
+  z-index: -10;
+}
+
+.whoami__title {
+  margin: 50px 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+.whoami__content__div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  
+}
+
+.whoami__content {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.whoami__content__desc {
+  position: relative;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: left;
+  text-indent: 20px;
+  font-variant: all-small-caps;
+  font-style: italic;
+  text-align-last: right;
+  box-sizing: border-box;
+  margin: 20px 50px;
+}
+
+.whoami__img {
+  width: 80%;
+  margin: 0 auto;
+  height: calc(100vh * 0.5);
+  object-fit: cover;
+}
+
+.span__whoami {
+  position: absolute;
+  font-size: 50px;
+}
+
+.span__first {
+  top: -25px;
+  left: -25px;
+}
+
+.span__last {
+  bottom: -15px;
+  right: -25px;
+}
+
+/* ! Media Queries */
+
+@media (min-width: 1000px) {
+  #whoami {
+    top: calc(100vh - 92px);
+  }
+
+  .whoami {
+    margin: 0 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(133, 15, 0, 1) 40%, rgba(133, 15, 0, 1) 100%); */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(133, 15, 0, 1) 70%, rgba(133, 15, 0, 1) 100%);
+    text-shadow: 5px 5px 20px red, 0 0 16px grey, 1px 1px 20px white;
+    /* height: calc(100vh - 92px); */
+    height: calc(100vh);
+    position: relative;
+    box-sizing: border-box;
+    z-index: -10;
+  }
+
+  .whoami__title {
+    margin: 50px 0;
+    color: white;
+    box-sizing: border-box;
+  }
+
+  .whoami__content__div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+
+  }
+
+  .whoami__content {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .whoami__content__desc {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    font-size: 48px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    width: 50%;
+    text-align: left;
+    text-indent: 50px;
+    font-variant: all-small-caps;
+    font-style: italic;
+    text-align-last: right;
+    box-sizing: border-box;
+
+    /* border-right: 5px double #ffffff; */
+    /* border-left: 5px double #ffffff; */
+
+  }
+
+  .whoami__img {
+    width: 50%;
+    height: calc(100vh - 92px);
+    margin: 92px 0 0 0;
+    /* border-radius: 20px; */
+    /* margin: 0 0 50px 100px; */
+    /* margin: 0 0 50px 0; */
+    object-fit: cover;
+    /* margin: 0; */
+  }
+
+  .span__whoami {
+    position: absolute;
+    font-size: 80px;
+  }
+  
+  .span__first {
+    top: -40px;
+    left: -40px;
+  }
+  
+  .span__last {
+    bottom: -20px;
+    right: -40px;
+  }
+  
+}
