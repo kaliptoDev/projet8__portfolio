@@ -21,6 +21,8 @@ const Header = () => {
     const [arrowClasses, setArrowClasses] = useState('')
     const [titleClasses, setTitleClasses] = useState('')
 
+
+    
     const handleChangeHeight = () => {
         const height = window.scrollY
 
@@ -143,7 +145,7 @@ const Header = () => {
                     <ul className='nav__list'>
                         <li><a href="#home" className='header__home header__nav__item'>{pageContent ? nav.home[currentLanguage] : "default"}</a></li>
                         <li><a href="#whoami__link" className='header__whoami header__nav__item '>{pageContent ? nav.skills[currentLanguage] : "default"}</a></li>
-                        <li><a href="#portfolio" className='header__portfolio header__nav__item'>{pageContent ? nav.portfolio[currentLanguage] : "default"}</a></li>
+                        <li><a href="#portfolio__link" className='header__portfolio header__nav__item'>{pageContent ? nav.portfolio[currentLanguage] : "default"}</a></li>
                         <li><a href="#pricing" className='header__pricing header__nav__item'>{pageContent ? nav.pricing[currentLanguage] : "default"}</a></li>
                         <li><a href="#contact" className='header__contact header__nav__item'>{pageContent ? nav.contact[currentLanguage] : "default"}</a></li>
                         <div className='changeLanguage header__nav__item' onClick={handleLanguage}>
