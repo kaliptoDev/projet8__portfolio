@@ -83,7 +83,7 @@
 }
 
 .header__background {
-  z-index: 0;
+  z-index: 1;
   position: fixed;
   width: 64px;
   height: 100vh;
