@@ -50,9 +50,31 @@
     }
   },
   "portfolio": {
-    "skills": [
-
+    "title": {
+      "fr": "Portfolio",
+      "en": "Portfolio"
+    },
+    "description": {
+      "fr": "Quelques projets sur lesquels j'ai travaillé.",
+      "en": "Here are some projects I've worked on."
+    },
+    "projects": [
+      {
+        "title": {
+          "fr": "Booki",
+          "en": "Booki"
+        },
+        "description": {
+          "fr": "Site vitrine d'entraînement à la structuration en CSS et CSS",
+          "en": "Showcase site for training in CSS and CSS structuring"
+        },
+        "link": "https://github.com/kaliptoDev/OCR_projet1/",
+        "image": "https://via.placeholder.com/480",
+        "stack": [
+          "/icons/html.svg",
+          "/icons/css.svg"
+        ]
+      }
     ]
-
   }
 }

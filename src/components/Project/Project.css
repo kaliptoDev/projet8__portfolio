@@ -1,0 +1,141 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    width: 30%;
+}
+
+.project__container {
+    width: 100%;
+}
+
+.project__container__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__container__image {
+    width: 100%;
+    height: 200px;
+    margin: 10px 0 10px 0;
+    overflow: hidden;
+}
+
+.project__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project__container__description__p {
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
+.project__container__description__link {
+    margin: 10px 0 10px 0;
+}
+
+.project__container__description__link a {
+    color: #000;
+    font-size: 16px;
+    text-decoration: underline;
+
+}
+
+.portfolio__stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+
+}
+
+.portfolio__stack__image {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+}
+
+
+@media (min-width: 1000px) {
+
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        width: 30%;
+    }
+
+    .project__container {
+        width: 100%;
+    }
+
+    .project__container__title {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 0 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project__container__image {
+        width: 100%;
+        height: 200px;
+        margin: 10px 0 10px 0;
+        overflow: hidden;
+    }
+
+    .project__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project__container__description__p {
+        font-size: 16px;
+        margin: 10px 0 10px 0;
+    }
+
+    .project__container__description__link {
+        margin: 10px 0 10px 0;
+    }
+
+    .project__container__description__link a {
+        color: #000;
+        font-size: 16px;
+        text-decoration: underline;
+
+    }
+
+    .portfolio__stack {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 10px 0;
+
+    }
+
+    .portfolio__stack__image {
+        width: 50px;
+        height: 50px;
+        margin: 0 5px;
+    }
+
+}
