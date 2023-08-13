@@ -60,13 +60,17 @@
     },
     "projects": [
       {
-        "title" : {
+        "title": {
           "fr": "Laurent Brémond",
           "en": "Laurent Brémond"
         },
         "description": {
-          "fr" : "Site personnel d'un réalisateur de documentaires professionnel. Le site est en cours de construction.",
+          "fr": "Site personnel d'un réalisateur de documentaires professionnel. Le site est en cours de construction.",
           "en": "Personal site of a professional documentary filmmaker. The site is under construction."
+        },
+        "partOfLabel": {
+          "fr": "Cadre: ",
+          "en": "Part of: "
         },
         "partof": {
           "fr": "Freelance",
@@ -82,8 +86,6 @@
           "/icons/nodejs.svg",
           "/icons/mongodb.svg"
         ]
-
-
       },
       {
         "title": {
@@ -93,6 +95,10 @@
         "description": {
           "fr": "Site vitrine d'entraînement à la structuration en HTML et CSS",
           "en": "Showcase site for training in HTML and CSS structuring"
+        },
+        "partOfLabel": {
+          "fr": "Cadre: ",
+          "en": "Part of: "
         },
         "partof": {
           "fr": "Formation OpenClassRooms",
@@ -107,12 +113,16 @@
       },
       {
         "title": {
-          "fr" : "Sophie Bluel",
+          "fr": "Sophie Bluel",
           "en": "Sophie Bluel"
         },
         "description": {
           "fr": "Site vitrine d'entraînement à la gestion dynamique d'un site vitrine",
           "en": "Showcase site for training in dynamic management of a showcase site"
+        },
+        "partOfLabel": {
+          "fr": "Cadre: ",
+          "en": "Part of: "
         },
         "partof": {
           "fr": "Formation OpenClassRooms",
@@ -135,6 +145,10 @@
           "fr": "Site d'entrainement à l'optimisation du référencement, des performances et au débug",
           "en": "Training site for optimizing referencing, performance and debugging"
         },
+        "partOfLabel": {
+          "fr": "Cadre: ",
+          "en": "Part of: "
+        },
         "partof": {
           "fr": "Formation OpenClassRooms",
           "en": "OpenClassRooms training"
@@ -155,6 +169,10 @@
         "description": {
           "fr": "Site d'entrainement à React et à la gestion d'API coté front end (CRA)",
           "en": "Training site for React and front end API management (CRA)"
+        },
+        "partOfLabel": {
+          "fr": "Cadre: ",
+          "en": "Part of: "
         },
         "partof": {
           "fr": "Formation OpenClassRooms",
@@ -177,6 +195,10 @@
         "description": {
           "fr": "Projet d'entrainement à NodeJS et Express, ainsi que MongoDB. Création et gestion d'une API CRUD",
           "en": "Training project for NodeJS and Express, as well as MongoDB. Creation and management of a CRUD API"
+        },
+        "partOfLabel": {
+          "fr": "Cadre: ",
+          "en": "Part of: "
         },
         "partof": {
           "fr": "Formation OpenClassRooms",

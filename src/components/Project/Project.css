@@ -7,7 +7,10 @@
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 25px;
-    width: 30%;
+    width: 90%;
+    background-color: #416983;
+    z-index: 0;
+    box-shadow: 0 0 12px black;
 }
 
 .project__container {
@@ -57,15 +60,19 @@
     justify-content: center;
     align-items: center;
     margin: 10px 0 10px 0;
+    flex-wrap: wrap;
 
 }
 
 .portfolio__stack__image {
     width: 50px;
     height: 50px;
-    margin: 0 5px;
+    margin: 0 12px;
 }
 
+.underlined {
+    text-decoration: underline;
+}
 
 @media (min-width: 1000px) {
 
@@ -80,6 +87,8 @@
         border: 2px solid #ccc;
         border-radius: 25px;
         width: 30%;
+        min-width: 500px;
+        min-height: 420px;
     }
 
     .project__container {
@@ -121,7 +130,7 @@
         color: #000;
         font-size: 16px;
         text-decoration: underline;
-
+        cursor: pointer;
     }
 
     .portfolio__stack {
@@ -132,10 +141,14 @@
 
     }
 
-    .portfolio__stack__image {
+    .portfolio__stack__image{
         width: 50px;
         height: 50px;
         margin: 0 5px;
+        fill: #2C4F67;
     }
 
+    .portfolio__stack__image svg path {
+        fill: #2C4F67;
+    }
 }

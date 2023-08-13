@@ -19,6 +19,9 @@ const Project = ({ project }) => {
                     <div className='project__container__description__p'>
                         <p>{project.description[currentLanguage]}</p>
                     </div>
+                    <div className="project__container__description__partof">
+                        <p><span className='underlined'>{project.partOfLabel[currentLanguage]}</span><span>{project.partof[currentLanguage]}</span></p>
+                    </div>
                     <div className="project__container__description__link">
                         <a href={project.link} target='_blank' >Repo</a>
                     </div>
