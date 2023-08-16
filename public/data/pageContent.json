@@ -69,15 +69,15 @@
           "en": "Personal site of a professional documentary filmmaker. The site is under construction."
         },
         "partOfLabel": {
-          "fr": "Cadre: ",
-          "en": "Part of: "
+          "fr": "Cadre:",
+          "en": "Part of:"
         },
         "partof": {
-          "fr": "Freelance",
-          "en": "Freelance"
+          "fr": " Freelance",
+          "en": " Freelance"
         },
         "link": "",
-        "image": "https://via.placeholder.com/480",
+        "image": "/images/laurentbremond.png",
         "stack": [
           "/icons/html.svg",
           "/icons/css.svg",
@@ -97,15 +97,15 @@
           "en": "Showcase site for training in HTML and CSS structuring"
         },
         "partOfLabel": {
-          "fr": "Cadre: ",
-          "en": "Part of: "
+          "fr": "Cadre:",
+          "en": "Part of:"
         },
         "partof": {
-          "fr": "Formation OpenClassRooms",
-          "en": "OpenClassRooms training"
+          "fr": " Formation OpenClassRooms",
+          "en": " OpenClassRooms training"
         },
         "link": "https://github.com/kaliptoDev/OCR_projet1/",
-        "image": "https://via.placeholder.com/480",
+        "image": "/images/booki.png",
         "stack": [
           "/icons/html.svg",
           "/icons/css.svg"
@@ -121,15 +121,15 @@
           "en": "Showcase site for training in dynamic management of a showcase site"
         },
         "partOfLabel": {
-          "fr": "Cadre: ",
-          "en": "Part of: "
+          "fr": "Cadre:",
+          "en": "Part of:"
         },
         "partof": {
-          "fr": "Formation OpenClassRooms",
-          "en": "OpenClassRooms training"
+          "fr": " Formation OpenClassRooms",
+          "en": " OpenClassRooms training"
         },
         "link": "https://github.com/kaliptoDev/OCR_projet2/",
-        "image": "https://via.placeholder.com/480",
+        "image": "/images/sophiebluel.png",
         "stack": [
           "/icons/html.svg",
           "/icons/css.svg",
@@ -146,15 +146,15 @@
           "en": "Training site for optimizing referencing, performance and debugging"
         },
         "partOfLabel": {
-          "fr": "Cadre: ",
-          "en": "Part of: "
+          "fr": "Cadre:",
+          "en": "Part of:"
         },
         "partof": {
-          "fr": "Formation OpenClassRooms",
-          "en": "OpenClassRooms training"
+          "fr": " Formation OpenClassRooms",
+          "en": " OpenClassRooms training"
         },
         "link": "https://github.com/kaliptoDev/nina-carducci",
-        "image": "https://via.placeholder.com/480",
+        "image": "/images/ninacarducci.png",
         "stack": [
           "/icons/html.svg",
           "/icons/css.svg",
@@ -171,15 +171,15 @@
           "en": "Training site for React and front end API management (CRA)"
         },
         "partOfLabel": {
-          "fr": "Cadre: ",
-          "en": "Part of: "
+          "fr": "Cadre:",
+          "en": "Part of:"
         },
         "partof": {
-          "fr": "Formation OpenClassRooms",
-          "en": "OpenClassRooms training"
+          "fr": " Formation OpenClassRooms",
+          "en": " OpenClassRooms training"
         },
         "link": "https://github.com/kaliptoDev/kasa",
-        "image": "https://via.placeholder.com/480",
+        "image": "/images/kasa.png",
         "stack": [
           "/icons/html.svg",
           "/icons/css.svg",
@@ -197,15 +197,15 @@
           "en": "Training project for NodeJS and Express, as well as MongoDB. Creation and management of a CRUD API"
         },
         "partOfLabel": {
-          "fr": "Cadre: ",
-          "en": "Part of: "
+          "fr": "Cadre:",
+          "en": "Part of:"
         },
         "partof": {
-          "fr": "Formation OpenClassRooms",
-          "en": "OpenClassRooms training"
+          "fr": " Formation OpenClassRooms",
+          "en": " OpenClassRooms training"
         },
         "link": "https://github.com/kaliptoDev/backend-p7",
-        "image": "https://via.placeholder.com/480",
+        "image": "/images/grimoire.png",
         "stack": [
           "/icons/javascript.svg",
           "/icons/nodejs.svg",
