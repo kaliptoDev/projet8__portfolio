@@ -5,17 +5,17 @@ import PageContentProvider from './providers/PageContentProvider.jsx'
 import './index.css'
 import { BrowserRouter as Router } from 'react-router-dom';
 import CurrentLanguageProvider from './providers/CurrentLanguageProvider.jsx'
-import SkillsProvider from './providers/SkillsProvider.jsx'
+import ProjectsProvider from './providers/ProjectsProvider.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <CurrentLanguageProvider>
       <PageContentProvider>
-        <SkillsProvider>
+        <ProjectsProvider>
           <Router>
             <App />
           </Router>
-        </SkillsProvider>
+        </ProjectsProvider>
       </PageContentProvider>
     </CurrentLanguageProvider>
   </React.StrictMode >
