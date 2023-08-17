@@ -46,7 +46,7 @@
     },
     "content": {
       "fr": "Développeur web passionné par les nouvelles technologies. Je suis toujours à la recherche de nouveaux challenges, apprendre et me surpasser.",
-      "en": "Web developer passionate about new technologies. I am always looking for new challenges, learn and surpass myself."  
+      "en": "Web developer passionate about new technologies. I am always looking for new challenges, learn and surpass myself."
     }
   },
   "portfolio": {
@@ -57,6 +57,182 @@
     "description": {
       "fr": "Quelques projets sur lesquels j'ai travaillé.",
       "en": "Here are some projects I've worked on."
+    }
+  },
+  "pricing": {
+    "price": {
+      "fr": "Prix donné sur devis, sous 48h après étude de projet.",
+      "en": "Price given on quote, within 48 hours after project study."
+    },
+    "firstColumn": {
+      "title": {
+        "fr": "Frontend",
+        "en": "Frontend"
+      },
+      "content": [
+        {
+          "fr": "Single Page Application",
+          "en": "Single Page Application"
+        },
+        {
+          "fr": "Multi Page Application",
+          "en": "Multi Page Application"
+        },
+        {
+          "fr": "Design Responsive",
+          "en": "Responsive Design"
+        },
+        {
+          "fr": "Mobile First",
+          "en": "Mobile First"
+        },
+        {
+          "fr": "Référencement optimisé",
+          "en": "Optimized SEO"
+        },
+        {
+          "fr": "Performance optimisée",
+          "en": "Optimized performance"
+        },
+        {
+          "fr": "Accessibilité optimisée",
+          "en": "Optimized accessibility"
+        },
+        {
+          "fr": "Site multi-langues",
+          "en": "Multi-language site"
+        },
+        {
+          "fr": "Design sur-mesure",
+          "en": "Custom design"
+        },
+        {
+          "fr": "Intégration de maquette",
+          "en": "Integration of mockup"
+        },
+        {
+          "fr": "Intégration de contenu",
+          "en": "Integration of content"
+        }
+      ]
+    },
+    "secondColumn": {
+      "title": {
+        "fr": "Frontend + Backend",
+        "en": "Frontend + Backend"
+      },
+      "content": [
+        {
+          "fr": "Single Page Application",
+          "en": "Single Page Application"
+        },
+        {
+          "fr": "Multi Page Application",
+          "en": "Multi Page Application"
+        },
+        {
+          "fr": "Design Responsive",
+          "en": "Responsive Design"
+        },
+        {
+          "fr": "Mobile First",
+          "en": "Mobile First"
+        },
+        {
+          "fr": "Référencement optimisé",
+          "en": "Optimized SEO"
+        },
+        {
+          "fr": "Performance optimisée",
+          "en": "Optimized performance"
+        },
+        {
+          "fr": "Accessibilité optimisée",
+          "en": "Optimized accessibility"
+        },
+        {
+          "fr": "Site multi-langues",
+          "en": "Multi-language site"
+        },
+        {
+          "fr": "Design sur-mesure",
+          "en": "Custom design"
+        },
+        {
+          "fr": "Intégration de maquette",
+          "en": "Integration of mockup"
+        },
+        {
+          "fr": "Intégration de contenu",
+          "en": "Integration of content"
+        },
+        {
+          "fr": "Création de la partie backend",
+          "en": "Creation of the backend part"
+        },
+        {
+          "fr": "Création et gestion de base de données",
+          "en": "Creation and management of databases"
+        },
+        {
+          "fr": "Création d'une API complète personnalisée",
+          "en": "Creation of a complete custom API"
+        },
+        {
+          "fr": "Gestion d'authentification sécurisée et chiffrée",
+          "en": "Secure and encrypted authentication management"
+        }
+      ]
+    },
+    "thirdColumn": {
+      "title": {
+        "fr": "Maintenance / Développement à l'heure",
+        "en": "Maintenance / Development per hour"
+      },
+      "features": {
+        "first": {
+          "p": {
+            "fr": "* Maintenance : Mise à jour de contenu, correction de bug, ajout de fonctionnalité, etc. ",
+            "en": "* Maintenance: Content update, bug fix, feature addition, etc."
+          },
+          "span": {
+            "fr": "2h offertes par mois pour 6 mois d'hébergement, puis sous réserve d'adhésion au forfait hébergement au delà des 6 mois offerts.",
+            "en": "2 hours offered per month for 6 months of hosting, then subject to subscription to the hosting package beyond the 6 months offered."
+          }
+        },
+        "second": {
+          "p": {
+            "fr": "** Support : Réponse à une question, aide à l'utilisation, etc.",
+            "en": "** Support: Answering a question, help with use, etc."
+          },
+          "span": {
+            "fr": "Réponse sous 48h ou 4h selon l'urgence sous réserve d'adhésion au forfait hébergement, facturation d'une heure de maintenance à minima en cas d'urgence.",
+            "en": "Response within 48 hours or 4 hours depending on the urgency, subject to subscription to the hosting package, billing of at least one hour of maintenance in case of emergency."
+          }
+        }
+      },
+      "content": [
+        {
+          "fr": "6 mois d'hébergement offerts",
+          "en": "6 months of hosting offered"
+        },
+        {
+          "fr": "2 heures de maintenance offertes *",
+          "en": "2 hours of maintenance offered *"
+        },
+        {
+          "fr": "Support sous 48h ouvrés ou 4h **",
+          "en": "Support within 48 working hours or 4 hours **"
+        },
+        {
+          "fr": "Maintenance - 40€ / heure",
+          "en": "Maintenance - 40€ / hour"
+        },
+        {
+          "fr": "Développement spécifique - 50€ / heure",
+          "en": "Specific development - 50€ / hour"
+        }
+      ]
     }
   }
 }
