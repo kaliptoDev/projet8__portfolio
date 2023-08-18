@@ -1,0 +1,50 @@
+.contact {
+  margin: 50px 0 50px 0;
+}
+
+.contact__title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding: 20px 0;
+}
+
+.contact__subtitle {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.contact__button {
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.contact__button:hover {
+    background-color: #ccc;
+}
+
+.contact__mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__mail__text {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 10px 0;
+    background-color: #eee;
+}
