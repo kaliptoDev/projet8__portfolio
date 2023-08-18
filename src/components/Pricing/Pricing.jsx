@@ -15,7 +15,8 @@ const Pricing = () => {
     pageContent && console.log(pageContent.pricing.thirdColumn)
 
     return (
-        <div className="pricing">
+        <div className="pricing__section">
+            <div id='pricing'></div>
             <div className='pricing__container'>
                 <div className='pricing__container__first pricing__div'>
                     <h3>Frontend</h3>
