@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(133, 15, 0, 1) 70%, rgba(133, 15, 0, 1) 100%);
-  text-shadow: 5px 5px 20px red, 0 0 16px grey, 1px 1px 20px white;
+  text-shadow: 0 0 16px grey, 1px 1px 20px white;
   height: calc(100vh);
   position: relative;
   box-sizing: border-box;
@@ -90,7 +90,7 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(133, 15, 0, 1) 70%, rgba(133, 15, 0, 1) 100%);
-    text-shadow: 5px 5px 20px red, 0 0 16px grey, 1px 1px 20px white;
+    text-shadow: 0 0 16px grey, 1px 1px 20px white;
 
     height: calc(100vh - 92px);
     position: relative;
