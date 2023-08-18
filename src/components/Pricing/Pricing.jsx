@@ -11,9 +11,7 @@ const Pricing = () => {
         index % 2 === 1 ? classes = 'light__gray' : classes = '';
         return <li className={classes}>{item[currentLanguage]}</li>
     })
-
-    pageContent && console.log(pageContent.pricing.thirdColumn)
-
+    
     return (
         <div className="pricing__section">
             <div id='pricing'></div>
