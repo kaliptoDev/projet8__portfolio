@@ -234,5 +234,25 @@
         }
       ]
     }
+  },
+  "contact": {
+    "title": {
+      "fr": "Contactez-moi",
+      "en": "Contact me"
+    },
+    "content": {
+      "firstP": {
+        "fr": "Besoin d'un devis, de renseignements, ou vous cherchez un développeur pour votre entreprise?",
+        "en": "Need a quote, information, or are you looking for a developer for your company?"
+      },
+      "secondP": {
+        "fr": "N'hésitez pas à me contacter! Je vous répondrai sous 48h.",
+        "en": "Do not hesitate to contact me! I will answer you within 48 hours."
+      }
+    },
+    "buttonLabel": {
+      "fr": "Afficher le mail",
+      "en": "Show email"
+    }
   }
 }
