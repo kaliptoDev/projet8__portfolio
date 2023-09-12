@@ -1,12 +1,39 @@
 import './Project.css'
 import useCurrentLanguage from '../../hooks/useCurrentLanguage'
 
-const Project = ({ project }) => {
+const Project = ({ project, background, id, nbOfProjects }) => {
 
     const { currentLanguage } = useCurrentLanguage()
 
+    let backgroundColor = ''
+    if (background === 0) {
+        backgroundColor = 'project__background__white'
+    } else {
+        backgroundColor = 'project__background__grey'
+    }
+
+    let topBorder = ''
+    if (id < 4) {
+        topBorder = 'project__border__top'
+    }
+
+    let rightBorder = ''
+    if (id % 3 === 0) {
+        rightBorder = 'project__border__right'
+    }
+
+    let last = ''
+    if (id === nbOfProjects) {
+        last = 'project__last'
+    }
+
+
+console.log(id)
+
+console.log(nbOfProjects + " " + id)
+
     return (
-        <div className="project">
+        <div className={`project ${backgroundColor} ${topBorder} ${rightBorder} ${last}`}>
             <div className="project__container">
                 <div className="project__container__title">
                     <h3>{project.title[currentLanguage]}</h3>

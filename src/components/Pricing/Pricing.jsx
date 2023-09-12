@@ -11,10 +11,13 @@ const Pricing = () => {
         index % 2 === 1 ? classes = 'light__gray' : classes = '';
         return <li className={classes}>{item[currentLanguage]}</li>
     })
-    
+
     return (
         <div className="pricing__section">
             <div id='pricing'></div>
+            <div className="pricing__title">
+                <h1 className='pricing__title__h1'>Pricing</h1>
+            </div>
             <div className='pricing__container'>
                 <div className='pricing__container__first pricing__div'>
                     <h3>Frontend</h3>
@@ -26,20 +29,20 @@ const Pricing = () => {
                                 return <li key={index} className={classes}>{item[currentLanguage]}</li>
                             })}
                         </ul>
-                        <h3>{pageContent&&pageContent.pricing.price[currentLanguage]}</h3>
+                        <h3>{pageContent && pageContent.pricing.price[currentLanguage]}</h3>
                     </div>
                 </div>
                 <div className='pricing__container__second pricing__div' >
                     <h3>Frontend + Backend</h3>
                     <div className='pricing__container__second__container pricing__container__ul'>
                         <ul className='pricing__ul'>
-                        {pageContent?.pricing.secondColumn.content.map((item, index) => {
+                            {pageContent?.pricing.secondColumn.content.map((item, index) => {
                                 let classes = ''
                                 index % 2 === 1 ? classes = 'light__gray' : classes = '';
                                 return <li key={index} className={classes}>{item[currentLanguage]}</li>
                             })}
                         </ul>
-                        <h3>{pageContent&&pageContent.pricing.price[currentLanguage]}</h3>
+                        <h3>{pageContent && pageContent.pricing.price[currentLanguage]}</h3>
                     </div>
                 </div>
                 <div className='pricing__container__third__including__features pricing__div'>
@@ -47,11 +50,11 @@ const Pricing = () => {
                         <h3>Maintenance / Développement à l'heure</h3>
                         <div className='pricing__container__third__container pricing__container__ul'>
                             <ul className='pricing__ul'>
-                            {pageContent?.pricing.thirdColumn.content.map((item, index) => {
-                                let classes = ''
-                                index % 2 === 1 ? classes = 'light__gray' : classes = '';
-                                return <li key={index} className={classes}>{item[currentLanguage]}</li>
-                            })}
+                                {pageContent?.pricing.thirdColumn.content.map((item, index) => {
+                                    let classes = ''
+                                    index % 2 === 1 ? classes = 'light__gray' : classes = '';
+                                    return <li key={index} className={classes}>{item[currentLanguage]}</li>
+                                })}
                             </ul>
                         </div>
                     </div>

@@ -1,6 +1,8 @@
 .portfolio__div {
     position: relative;
     /* margin: 0 0 1000px 0; */
+    width: 100%;
+    margin: 0 0 20px 0;
 }
 
 .portfolio__container {
@@ -8,8 +10,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    padding: 10px;
+    /* margin: 10px;
+    padding: 10px; */
+    width: 100%;
+}
+
+.portfolio__title {
+    font-size: 30px;
+    font-weight: 600;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 16px 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 1000px) {
@@ -17,6 +31,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        
     }
 
     #portfolio {
