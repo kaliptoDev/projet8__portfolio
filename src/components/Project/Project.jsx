@@ -27,11 +27,6 @@ const Project = ({ project, background, id, nbOfProjects }) => {
         last = 'project__last'
     }
 
-
-console.log(id)
-
-console.log(nbOfProjects + " " + id)
-
     return (
         <div className={`project ${backgroundColor} ${topBorder} ${rightBorder} ${last}`}>
             <div className="project__container">

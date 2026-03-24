@@ -47,7 +47,7 @@ const Pricing = () => {
                 </div>
                 <div className='pricing__container__third__including__features pricing__div'>
                     <div className='pricing__container__third  '>
-                        <h3>Maintenance / Développement à l'heure</h3>
+                        <h3>{pageContent&& pageContent.pricing.thirdColumn.title[currentLanguage]}</h3>
                         <div className='pricing__container__third__container pricing__container__ul'>
                             <ul className='pricing__ul'>
                                 {pageContent?.pricing.thirdColumn.content.map((item, index) => {
